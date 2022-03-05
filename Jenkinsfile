@@ -1,7 +1,7 @@
 pipeline {
     agent {label 'linux'}
     options{
-    builDiscarder(logRotator(numToKeepStr:'5'))
+    buildDiscarder(logRotator(numToKeepStr:'5'))
     }
     stages {
         stage('scan') {
